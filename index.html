@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#102b3a" />
+    <meta name="description" content="Dobrogea Bistro este un concept fictiv de restaurant în Constanța, cu inspirație dobrogeană și mediteraneană. Descoperă meniul demonstrativ și rezervă o masă." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dobrogea Bistro | Gustul Dobrogei, în ritmul mării" />
+    <meta property="og:description" content="Un concept fictiv de bistro în Constanța. Meniu și prețuri demonstrative." />
+    <title>Dobrogea Bistro | Gustul Dobrogei, în ritmul mării</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#continut">Sari la conținut</a>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Dobrogea Bistro, pagina principală">
+        <span class="brand-seal" aria-hidden="true">D</span>
+        <span class="brand-copy"><span class="brand-name">Dobrogea</span><span class="brand-type">Bistro · Constanța</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Deschide meniul" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span><span></span>
+      </button>
+
+      <nav class="primary-navigation" id="primary-navigation" aria-label="Navigare principală">
+        <a href="#poveste">Povestea</a>
+        <a href="#meniu">Meniu</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="#rezervari">Rezervă o masă <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="continut">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2200&q=88" alt="Masă elegantă cu preparate, imagine demonstrativă" fetchpriority="high" />
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow"><span></span> Constanța · concept fictiv</p>
+          <h1 id="hero-title">Gustul Dobrogei,<br /><em>în ritmul mării.</em></h1>
+          <p class="hero-description">O masă bună începe cu ingrediente alese și se termină cu încă o poveste.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#rezervari">Rezervă o masă <span aria-hidden="true">↗</span></a>
+            <a class="button button-outline" href="#meniu">Explorează meniul <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-caption"><span>43° 37' N</span><span class="caption-rule"></span><span>La malul Mării Negre</span></div>
+        <a class="hero-scroll" href="#poveste" aria-label="Derulează la povestea restaurantului"><span></span></a>
+      </section>
+
+      <section class="intro section-wrap" id="poveste" aria-labelledby="intro-title">
+        <div class="intro-index reveal"><span>01</span><span class="intro-line"></span><span>Despre noi</span></div>
+        <div class="intro-main reveal">
+          <p class="eyebrow">Între pământ și mare</p>
+          <h2 id="intro-title">Dobrogea are gust de <em>acasă.</em></h2>
+        </div>
+        <div class="intro-aside reveal">
+          <p>Un concept de bistro imaginar, inspirat de mesele lungi, lumina de coastă și întâlnirea aromelor dobrogene cu cele mediteraneene.</p>
+          <span class="demo-label">Restaurant fictiv · text demonstrativ</span>
+        </div>
+      </section>
+
+      <section class="menu-section" id="meniu" aria-labelledby="menu-title">
+        <div class="section-wrap menu-inner">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">De pe masa noastră</p>
+              <h2 id="menu-title">Meniu de <em>sezon</em></h2>
+            </div>
+            <p class="section-note">Preparate și prețuri demonstrative.<br />Lista nu reprezintă oferta unui local real.</p>
+          </div>
+
+          <div class="menu-filters reveal" role="group" aria-label="Filtrează preparatele după categorie">
+            <button class="filter-button is-active" type="button" data-filter="toate" aria-pressed="true">Toate</button>
+            <button class="filter-button" type="button" data-filter="gustari" aria-pressed="false">De început</button>
+            <button class="filter-button" type="button" data-filter="feluri" aria-pressed="false">Feluri principale</button>
+            <button class="filter-button" type="button" data-filter="deserturi" aria-pressed="false">Desert</button>
+          </div>
+
+          <div class="menu-list" aria-live="polite">
+            <article class="menu-item reveal" data-category="gustari">
+              <span class="menu-number">01</span><div class="menu-copy"><h3>Brânză maturată, miere și nuci</h3><p>Brânză de inspirație locală, miere aromată, nuci rumenite</p></div><span class="menu-price">42 <small>lei</small></span>
+            </article>
+            <article class="menu-item reveal" data-category="gustari">
+              <span class="menu-number">02</span><div class="menu-copy"><h3>Roșii de grădină și ierburi</h3><p>Roșii coapte, castravete, ceapă dulce, brânză și ulei aromat</p></div><span class="menu-price">38 <small>lei</small></span>
+            </article>
+            <article class="menu-item reveal" data-category="feluri">
+              <span class="menu-number">03</span><div class="menu-copy"><h3>Pește la grătar, mămăligă cremoasă</h3><p>Pește de sezon, sos verde cu lămâie, mămăligă</p></div><span class="menu-price">78 <small>lei</small></span>
+            </article>
+            <article class="menu-item reveal" data-category="feluri">
+              <span class="menu-number">04</span><div class="menu-copy"><h3>Stifado dobrogean</h3><p>Gătit lent, ceapă dulce, vin roșu și ierburi de câmpie</p></div><span class="menu-price">86 <small>lei</small></span>
+            </article>
+            <article class="menu-item reveal" data-category="feluri">
+              <span class="menu-number">05</span><div class="menu-copy"><h3>Sarmale în foi de viță</h3><p>Orez parfumat, verdețuri, iaurt și mămăligă aurie</p></div><span class="menu-price">64 <small>lei</small></span>
+            </article>
+            <article class="menu-item reveal" data-category="deserturi">
+              <span class="menu-number">06</span><div class="menu-copy"><h3>Plăcintă cu brânză dulce</h3><p>Foi subțiri, coajă de lămâie și iaurt cu miere</p></div><span class="menu-price">34 <small>lei</small></span>
+            </article>
+            <article class="menu-item reveal" data-category="deserturi">
+              <span class="menu-number">07</span><div class="menu-copy"><h3>Prăjitură cu nucă și miere</h3><p>Nucă rumenită, cremă fină, miere dobrogeană</p></div><span class="menu-price">32 <small>lei</small></span>
+            </article>
+          </div>
+          <p class="menu-footnote">* Prețurile sunt fictive și au rol exclusiv demonstrativ.</p>
+        </div>
+      </section>
+
+      <section class="gallery-section section-wrap" id="galerie" aria-labelledby="gallery-title">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">O atmosferă aparte</p><h2 id="gallery-title">La masă, <em>împreună.</em></h2></div>
+          <p class="section-note">Fotografii demonstrative, găzduite de Unsplash.<br />Nu reprezintă restaurantul fictiv.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-photo gallery-photo-large reveal">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=85" alt="Interior de restaurant cu mese pregătite, fotografie demonstrativă" loading="lazy" />
+            <figcaption><span>01</span> Un loc pentru povești</figcaption>
+          </figure>
+          <figure class="gallery-photo reveal">
+            <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=1000&q=85" alt="Preparat servit pe o farfurie, fotografie demonstrativă" loading="lazy" />
+            <figcaption><span>02</span> Gusturi de împărțit</figcaption>
+          </figure>
+          <figure class="gallery-photo reveal">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=85" alt="Masă cu preparate, fotografie demonstrativă" loading="lazy" />
+            <figcaption><span>03</span> Încă puțin timp</figcaption>
+          </figure>
+        </div>
+        <p class="gallery-credit">Imagini cu rol ilustrativ. Conceptul Dobrogea Bistro este fictiv.</p>
+      </section>
+
+      <section class="story-band" aria-labelledby="story-title">
+        <div class="story-image">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1400&q=85" alt="Preparat mediteranean cu ingrediente proaspete, fotografie demonstrativă" loading="lazy" />
+          <span class="image-tag">Imagine demonstrativă</span>
+        </div>
+        <div class="story-copy">
+          <p class="eyebrow reveal">Povestea Dobrogei Bistro</p>
+          <h2 id="story-title" class="reveal">Un pic de mare.<br /><em>Mult suflet.</em></h2>
+          <p class="story-lead reveal">Ne imaginăm un loc unde gusturile Dobrogei întâlnesc spiritul Mediteranei și unde masa e mereu mai frumoasă când e împărțită.</p>
+          <p class="story-note reveal">Acesta este un concept fictiv creat ca demonstrație de design. Restaurantul, echipa și preparatele nu reprezintă o afacere reală.</p>
+          <a class="text-link reveal" href="#rezervari">Hai să ne întâlnim <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="reservation-section" id="rezervari" aria-labelledby="reservation-title">
+        <div class="reservation-inner section-wrap">
+          <div class="reservation-intro reveal">
+            <p class="eyebrow">Păstrăm un loc la masă</p>
+            <h2 id="reservation-title">Ne vedem<br /><em>în curând?</em></h2>
+            <p>Completează formularul demonstrativ sau scrie-ne pe WhatsApp. Formularul nu transmite o rezervare reală.</p>
+            <a class="whatsapp-link" href="https://wa.me/?text=Bun%C4%83%20ziua%21%20A%C8%99%20dori%20s%C4%83%20discut%20despre%20o%20rezervare%20la%20Dobrogea%20Bistro." target="_blank" rel="noopener noreferrer">
+              <span class="whatsapp-mark" aria-hidden="true">W</span><span>Scrie-ne pe WhatsApp</span><span class="whatsapp-arrow" aria-hidden="true">↗</span>
+            </a>
+            <p class="whatsapp-note">Link demonstrativ fără număr de telefon configurat.</p>
+          </div>
+
+          <form class="reservation-form reveal" id="reservation-form">
+            <div class="form-heading"><span>Formular demonstrativ</span><span>Fără trimitere către un server</span></div>
+            <label class="form-field"><span>Numele tău</span><input name="name" type="text" autocomplete="name" placeholder="Ex. Ana Popescu" required minlength="2" /></label>
+            <div class="form-row">
+              <label class="form-field"><span>Data</span><input id="reservation-date" name="date" type="date" required /></label>
+              <label class="form-field"><span>Ora</span><select name="time" required><option value="" disabled selected>Alege ora</option><option>12:00</option><option>13:30</option><option>15:00</option><option>17:30</option><option>19:00</option></select></label>
+            </div>
+            <div class="form-row">
+              <label class="form-field"><span>Număr persoane</span><select name="guests" required><option value="" disabled selected>Alege</option><option value="1">1 persoană</option><option value="2">2 persoane</option><option value="3">3 persoane</option><option value="4">4 persoane</option><option value="5">5 persoane</option><option value="6">6 persoane</option></select></label>
+              <label class="form-field"><span>Telefon (opțional)</span><input name="phone" type="tel" autocomplete="tel" placeholder="07xx xxx xxx" /></label>
+            </div>
+            <button class="button button-navy" type="submit">Trimite cererea demonstrativă <span aria-hidden="true">↗</span></button>
+            <p class="form-status" id="reservation-status" role="status" aria-live="polite"></p>
+            <p class="form-disclaimer">Demo: datele completate rămân în această pagină și nu sunt salvate sau trimise.</p>
+          </form>
+        </div>
+      </section>
+
+      <section class="contact-section section-wrap" id="contact" aria-labelledby="contact-title">
+        <div class="contact-heading reveal">
+          <p class="eyebrow">Ne găsești în Constanța</p>
+          <h2 id="contact-title">Aproape de mare,<br /><em>oriunde ai fi.</em></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-block"><span class="contact-label">Locație</span><p>Constanța, România<br /><small>Poziție demonstrativă în zona centrală. Nu este adresa unui local real.</small></p></div>
+            <div class="contact-block"><span class="contact-label">Program demonstrativ</span><p>Ma–Du &nbsp; 12:00–22:00<br /><small>Program fictiv, afișat cu scop ilustrativ.</small></p></div>
+            <a class="map-link" href="https://www.openstreetmap.org/?mlat=44.1733&amp;mlon=28.6383#map=14/44.1733/28.6383" target="_blank" rel="noopener noreferrer">Deschide harta Constanței <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="map-frame reveal">
+            <iframe title="Hartă demonstrativă a orașului Constanța" src="https://www.openstreetmap.org/export/embed.html?bbox=28.610%2C44.150%2C28.670%2C44.195&amp;layer=mapnik&amp;marker=44.1733%2C28.6383" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <span class="map-badge">Locație demonstrativă · Constanța</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#top" aria-label="Dobrogea Bistro, înapoi sus"><span class="brand-seal" aria-hidden="true">D</span><span class="brand-copy"><span class="brand-name">Dobrogea</span><span class="brand-type">Bistro · Constanța</span></span></a>
+      <p>Concept fictiv · Date demonstrative</p>
+      <a href="#top" class="back-to-top">Înapoi sus ↑</a>
+      <span class="footer-year">© <span id="current-year">2026</span></span>
+    </footer>
+  </body>
+</html>
